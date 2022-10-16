@@ -15,7 +15,7 @@ def index():
     else:
             return render_template('main.html')
 
-
+############
 
 if __name__ == "__main__":
     # edges = Graph(54)
@@ -161,5 +161,5 @@ if __name__ == "__main__":
     g.add_edge(49,50,3.5)
     g.add_edge(49,52,3.5)
     g.add_edge(49,51,7)
-    
+
     app.run(debug=True)  
