@@ -9,8 +9,14 @@ def index():
     if request.method == 'POST':
         startPoint = int(request.form['startPoint']);
         endPoint = int(request.form['endPoint']);
-        
-        return  g.dijkstra(startPoint, endPoint)
+        paths = g.dijkstra(startPoint, endPoint) 
+
+        return render_template('main.html', paths=paths)
+
+    else:
+            return render_template('main.html')
+
+
 
 
 ############
