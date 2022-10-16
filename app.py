@@ -12,8 +12,6 @@ def index():
         
         return  g.dijkstra(startPoint, endPoint)
 
-    else:
-            return render_template('main.html')
 
 ############
 
